@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonel's Third HTML Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My GIS 3410 Web Mapping Lab</h1>
+
+    <p>Hello!</p>
+
+    <h2>About Me</h2>
+    <img src="20220828_112817.jpg" alt="My Portfolio">
+    <p>Explore my portfolio: <a href="https://sites.google.com/view/leonel-alvarado-portfolio/home">Portfolio</a>.</p>
+    <p>Here are a few hobbies I enjoy:</p>
+    <ul>
+        <li>Music Production</li>
+        <li>Astronomy</li>
+        <li>Sports (Go Avs!)</li>
+    </ul>
+
+    <h3>Classes I Am Attending (Fall 2023)</h3>
+    <ul>
+        <li>Web Mapping</li>
+        <li>Natural Hazards</li>
+        <li>Computer Science Principles</li>
+        <li>Cartography</li>
+        <li>College Algebra at Front Range Community College</li>
+    </ul>
+
+    <h2>Places I Have Visited</h2>
+    <table>
+        <tr>
+            <th>Location</th>
+            <th>Country</th>
+            <th>Reason for Visiting</th>
+        </tr>
+        <tr>
+            <td>San Julian</td>
+            <td>Mexico</td>
+            <td>Visiting Family</td>
+        </tr>
+        <tr>
+            <td>Glenwood Springs, Colorado</td>
+            <td>United States</td>
+            <td>Hot Springs Weekend Getaway</td>
+        </tr>
+        <tr>
+            <td>Las Vegas, Nevada</td>
+            <td>United States</td>
+            <td>Exploring Vegas and Its Architecture</td>
+        </tr>
+    </table>
+
+    <h2>Enjoy this Picture of My Cat: Mira</h2>
+    <img src="Snapchat-2044839159.jpg" alt="Picture of My Cat Mira">
+</body>
+
+</html>
