@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Leonel Fourth HTML webpage.</title>
+  <div id= "container">
+<style>
+
+  
+</style>
+</head>
+  <body>
+    <h1>Leonel fifth HTML Webpage</h1>
+  
+
+    
+    <p>Hello This if the fifth lab for GIS 3410 Web Mapping, in MSu Denver </p>
+
+    
+    <h3>About Me!</h3>
+
+
+<div id= "photo">
+
+    <img id= "photo"  src="20220828_112817.jpg" />
+
+
+  <p class= "caption" >Leonel Alvarado </p>
+  <p class= "caption" >Photo By: Leonel Alvarado</p>
+    My Portfolio <a href="https://sites.google.com/view/leonel-alvarado-portfolio/home">Porfolio.</a>.
+</div>
+  
+  <div id= "hobbies">
+  <ol>
+<p> My Hobbies.</p>
+  <li> Music Production</li>
+  <li> Astronomy</li>
+  <li> Sports (Go Avs)</li>
+</ol>
+  </div>
+    
+    <div id= "classes">
+ <p>Some other things about me - Classes i am Attending as of Fall 2023</p>
+    <ul>
+    <li>Web Mapping</li>
+    <li>Natural Hazards</li>
+    <li>Computer Science Principles</li>
+    <li>Cartography</li>
+    <li>College Algebra at Front Range Community College</li>
+    </ul>
+    </div>
+
+    
+    <h2> Places I have visted </h2>
+<table id= "location">
+<tr>
+  <th>Location</th>
+  <th>Country</th>
+  <th>Reason for Visiting</th>  
+  </tr>
+  <tr>
+
+    <td>San Julian</td>
+    <td>Mexico</td>
+    <td>Visitng Family</td>  
+  </tr>
+  <tr>
+    <td>Glenwood Springs, Colorad</td>
+    <td>United States</td>
+    <td>Hot Springs weekend Getaway</td>
+  </tr>
+  <tr>
+    <td>Las Vegas, Nevada</td>
+    <td>United States</td>
+    <td>Wanted to see what the hype was about in Vegas&  Cool the buffets </td>
+  </tr>
+
+</table>
+
+    <p> Enjoy this picture of my Cat: Mira</p>
+     <img src= "Snapchat-2044839159.jpg" />
+    
+  </div>
+  </body>
+</html>
