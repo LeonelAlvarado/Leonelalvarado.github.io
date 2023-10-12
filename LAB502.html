@@ -1,150 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title> Leonel Fourth HTML webpage.</title>
- 
-<style>
-    body { width: 100% }
-  #container {
-      width: 70%;
-      text-aligh: left;
-      margin: 0px auto;
-  }
-  #photo {
-    background-color: #eefeee;
-    margin-left: auto;
-    margin-right: 0;
-    float: right;
-    width: 200px;
-  }
-  #photo {
-    height:auto;
-    width: 150px;
-    border:1px solid: #ddd;
-    border-radius:50%;
-    padding: 5px;
-    display: block;
-    margin: auto;
-  }
-  .caption {
-    font-size:10px;
-    font-family: times;
-    text-align:center;
-  }
-p.td, li {
-  font-size: 10px
-  font- family: times; 
-}
-  h1, h2, h3, h4, h5, h6 {
-    font-family:times;
-    background-color:#008000;
-  }
-  a {text-decoration: none; }
-  a: visted { background-color: #feeeee; }
-  a: link { background-color: #eeeefe; }
-  a: hover { background-color: #fefeee; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonel's Fourth HTML Webpage</title>
 
-  #hobbies {
-    background-color: #fefeee;
+    <style>
+        body {
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+        }
 
-  #location {
-  font-family: Ariel;
-    border-collapse: collapse;
-    width:100%;
-    
-  }
-    #location th, #location td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    }
+        #container {
+            width: 70%;
+            margin: 0 auto;
+        }
 
-    #location th {
-      font: black bold times;
-      background-color: #04aa6d;
-      padding-top: 12px
-      padding-bottom: 12px;
-      text-align:left;
-      color: white;
-    }
+        #photo-container {
+            background-color: #eefeee;
+            float: right;
+            width: 200px;
+        }
 
-  #location tr: nth-child(even) {background-color: #f2f2f2; }
+        #photo {
+            height: auto;
+            width: 150px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            padding: 5px;
+            display: block;
+            margin: auto;
+        }
 
-  #classes {background-color: #eeeefe; }
-  
-</style>
+        .caption {
+            font-size: 10px;
+            text-align: center;
+        }
+
+        p, li {
+            font-size: 10px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            background-color: #008000;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            background-color: #feeeee;
+        }
+
+        a:link {
+            background-color: #eeeefe;
+        }
+
+        a:hover {
+            background-color: #fefeee;
+        }
+
+        #hobbies {
+            background-color: #fefeee;
+        }
+
+        #location {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #location th, #location td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #location th {
+            background-color: #04aa6d;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            color: white;
+        }
+
+        #location tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #classes {
+            background-color: #eeeefe;
+        }
+
+    </style>
 </head>
-  <body>
-<div id= "container">
-    <h1>Leonel fifth HTML Webpage</h1>
-  
 
-    
-    <p>Hello This if the fifth lab for GIS 3410 Web Mapping, in MSu Denver </p>
+<body>
 
-    
-    <h3>About Me!</h3>
+    <div id="container">
+        <h1>Leonel's Fifth HTML Webpage</h1>
 
+        <p>Hello! This is the fifth lab for GIS 3410 Web Mapping at MSU Denver.</p>
 
-<div id= "photo">
+        <h3>About Me!</h3>
 
-    <img id= "photo"  src="20220828_112817.jpg" />
+        <div id="photo-container">
+            <img id="photo" src="20220828_112817.jpg" alt="Leonel Alvarado">
+            <p class="caption">Leonel Alvarado</p>
+            <p class="caption">Photo By: Leonel Alvarado</p>
+            <p>Check out my <a href="https://sites.google.com/view/leonel-alvarado-portfolio/home">Portfolio</a>.</p>
+        </div>
 
+        <div id="hobbies">
+            <h4>My Hobbies:</h4>
+            <ol>
+                <li>Music Production</li>
+                <li>Astronomy</li>
+                <li>Sports (Go Avs!)</li>
+            </ol>
+        </div>
 
-  <p class= "caption" >Leonel Alvarado </p>
-  <p class= "caption" >Photo By: Leonel Alvarado</p>
-    My <a href="https://sites.google.com/view/leonel-alvarado-portfolio/home">Porfolio.</a>.
-</div>
-  
-  <div id= "hobbies">
-  <ol>
-<p> My Hobbies.</p>
-  <li> Music Production</li>
-  <li> Astronomy</li>
-  <li> Sports (Go Avs)</li>
-</ol>
-  </div>
-    
-    <div id= "classes">
- <p>Some other things about me - Classes i am Attending as of Fall 2023</p>
-    <ul>
-    <li>Web Mapping</li>
-    <li>Natural Hazards</li>
-    <li>Computer Science Principles</li>
-    <li>Cartography</li>
-    <li>College Algebra at Front Range Community College</li>
-    </ul>
-    </div>
+        <div id="classes">
+            <h4>Classes I'm Attending as of Fall 2023:</h4>
+            <ul>
+                <li>Web Mapping</li>
+                <li>Natural Hazards</li>
+                <li>Computer Science Principles</li>
+                <li>Cartography</li>
+                <li>College Algebra at Front Range Community College</li>
+            </ul>
+        </div>
 
-    
-    <h2> Places I have visted </h2>
-<table id= "location">
-<tr>
-  <th>Location</th>
-  <th>Country</th>
-  <th>Reason for Visiting</th>  
-  </tr>
-  <tr>
+        <h2>Places I Have Visited</h2>
+        <table id="location">
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Country</th>
+                    <th>Reason for Visiting</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>San Julian</td>
+                    <td>Mexico</td>
+                    <td>Visiting Family</td>
+                </tr>
+                <tr>
+                    <td>Glenwood Springs, Colorado</td>
+                    <td>United States</td>
+                    <td>Hot Springs Weekend Getaway</td>
+                </tr>
+                <tr>
+                    <td>Las Vegas, Nevada</td>
+                    <td>United States</td>
+                    <td>Wanted to see what the hype was about in Vegas & enjoy the buffets</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <td>San Julian</td>
-    <td>Mexico</td>
-    <td>Visitng Family</td>  
-  </tr>
-  <tr>
-    <td>Glenwood Springs, Colorad</td>
-    <td>United States</td>
-    <td>Hot Springs weekend Getaway</td>
-  </tr>
-  <tr>
-    <td>Las Vegas, Nevada</td>
-    <td>United States</td>
-    <td>Wanted to see what the hype was about in Vegas&  Cool the buffets </td>
-  </tr>
-
-</table>
-
-    <p> Enjoy this picture of my Cat: Mira</p>
-     <img src= "Snapchat-2044839159.jpg" />
-    
-  </div>
-  </body>
-</html>
+        <p>Enjoy this picture of my Cat, Mira:</p>
+        <img src="Snapchat-2044839159.jpg" alt="M
