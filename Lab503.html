@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonel's Fourth HTML Webpage</title>
+
+    <style>
+        body {
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px; 
+            background-color: #f6ffef;
+        }
+
+        #container {
+            width: 70%;
+            margin: 0 auto;
+            background-color: #e6ffe6; 
+        }
+
+        #photo-container {
+            background-color: #e6ffe6; 
+            float: right;
+            width: 200px;
+        }
+
+        #photo {
+            height: auto;
+            width: 150px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            padding: 5px;
+            display: block;
+            margin: auto;
+        }
+
+        .caption {
+            font-size: 12px; /* Increase font size */
+            text-align: center;
+        }
+
+        p, li {
+            font-size: 14px; /* Increase font size */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            background-color: #00b300; /* A deep green shade for headers */
+            color: #ffffff; /* White text on green background */
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #006600; /* Green text for links */
+        }
+
+        a:visited {
+            color: #004d00; /* Darker green for visited links */
+        }
+
+        a:hover {
+            color: #008000; /* Medium green for hover */
+        }
+
+        #hobbies, #classes {
+            background-color: #e6ffe6; /* Slight green shade for these sections */
+            font-size: 16px; /* Increase font size for better readability */
+            padding: 10px; /* Added padding for better presentation */
+            border: 1px solid #b3ffb3; /* Slight green border */
+            margin-top: 20px; /* Some spacing from other elements */
+        }
+
+        #location {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px; /* Some spacing from other elements */
+        }
+
+        #location th, #location td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #location th {
+            background-color: #00b300;
+            color: white;
+        }
+
+        #location tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #cat img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        #cat img:hover {
+            transform: scale(1.5);
+            transition: transform 0.3s ease-in-out;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Leonel's sixth HTML Webpage</h1>
+        
+        <p>Hello! This is the fifth lab for GIS 3410 Web Mapping at MSU Denver.</p>
+
+        <h3>About Me!</h3>
+
+        <div id="photo-container">
+            <img id="photo" src="20220828_112817.jpg" alt="Leonel Alvarado">
+            <p class="caption">Leonel Alvarado</p>
+            <p class="caption">Photo By: Leonel Alvarado</p>
+            <p>Check out my <a href="https://sites.google.com/view/leonel-alvarado-portfolio/home">Portfolio</a>.</p>
+        </div>
+
+        <div id="hobbies">
+            <h4>My Hobbies:</h4>
+            <ol>
+                <li>Music Production</li>
+                <li>Astronomy</li>
+                <li>Sports (Go Avs!)</li>
+            </ol>
+        </div>
+
+        <div id="classes">
+            <h4>Classes I'm Attending as of Fall 2023:</h4>
+            <ul>
+                <li>Web Mapping</li>
+                <li>Natural Hazards</li>
+                <li>Computer Science Principles</li>
+                <li>Cartography</li>
+                <li>College Algebra at Front Range Community College</li>
+            </ul>
+        </div>
+
+        <h2>Places I Have Visited</h2>
+        <table id="location">
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Country</th>
+                    <th>Reason for Visiting</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>San Julian, Jalisco</td>
+                    <td>Mexico</td>
+                    <td>Visiting Family</td>
+                </tr>
+                <tr>
+                    <td>Glenwood Springs, Colorado</td>
+                    <td>United States</td>
+                    <td>Hot Springs Weekend Getaway</td>
+                </tr>
+                <tr>
+                    <td>Las Vegas, Nevada</td>
+                    <td>United States</td>
+                    <td>Wanted to see what the hype was about in Vegas & enjoy the buffets</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Enjoy this picture of my Cat, Mira (hover over the picture btw):</p>
+    <div id="cat">
+    <img src="Snapchat-2044839159.jpg" alt="Mira the Cat" />
+</div>
