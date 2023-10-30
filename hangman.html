@@ -20,7 +20,7 @@
             cursor: pointer; /* This makes it obvious you can click the letters */
         }
 
-        /* Box */
+        /* Bigger lettering as well as hangman*/
         #wordInputBox {
             margin: 20px;
             font-size: 24px;
@@ -31,80 +31,80 @@
             font-size: 24px;
             width: 300px;
         }
-      #hangman {
-    width: 100px;
-    height: 200px;
-    position: relative;
-    margin-bottom: 20px;
-}
+        #hangman {
+            width: 100px;
+            height: 200px;
+            position: relative;
+            margin-bottom: 20px;
+          }
 
-.gallows {
-    height: 20px;
-    width: 100px;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-}
+        .gallows {
+             height: 20px;
+              width: 100px;
+              background-color: black;
+              position: absolute;
+              bottom: 0;
+          }
 
-.head {
-    width: 40px;
-    height: 40px;
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 30px;
-    display: none; /* Initially hidden */
-}
+          .head {
+              width: 40px;
+              height: 40px;
+              background-color: black;
+              border-radius: 50%;
+              position: absolute;
+              top: 0;
+              left: 30px;
+              display: none; 
+          }
 
-.body {
-    width: 10px;
-    height: 50px;
-    background-color: black;
-    position: absolute;
-    top: 40px;
-    left: 45px;
-    display: none; /* Initially hidden */
-}
+          .body {
+            width: 10px;
+            height: 50px;
+            background-color: black;
+            position: absolute;
+            top: 40px;
+            left: 45px;
+            display: none; 
+          }
 
-.leftArm, .rightArm {
-    width: 30px;
-    height: 5px;
-    background-color: black;
-    position: absolute;
-    top: 45px;
-    display: none; /* Initially hidden */
-}
+          .leftArm, .rightArm {
+            width: 30px;
+            height: 5px;
+              background-color: black;
+              position: absolute;
+              top: 45px;
+              display: none; 
+          }
 
-.leftArm {
-    left: 15px;
-    transform: rotate(45deg);
-}
+        .leftArm {
+            left: 15px;
+            transform: rotate(45deg);
+          }
 
-.rightArm {
-    right: 15px;
-    transform: rotate(-45deg);
-}
+        .rightArm {
+            right: 15px;
+            transform: rotate(-45deg);
+          }
 
-.leftLeg, .rightLeg {
-    width: 5px;
-    height: 50px;
-    background-color: black;
-    position: absolute;
-    top: 90px;
-    display: none; /* Initially hidden */
-}
+          .leftLeg, .rightLeg {
+            width: 5px;
+            height: 50px;
+            background-color: black;
+            position: absolute;
+            top: 90px;
+            display: none; /* Initially hidden */
+          }
 
-.leftLeg {
-    left: 35px;
-}
+        .leftLeg {
+            left: 35px;
+            }
 
-.rightLeg {
-    right: 35px;
-}
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
+        .rightLeg {
+            right: 35px;
+            }
+            </style>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script>
          $(document).ready( function() {
               // this is the secret word!
               word =  "a n d r o m e d a ";
@@ -221,6 +221,7 @@
                     console.log("triedLetters is ", triedLetters);
                     console.log("word is ", word);
                   }
+                // This shows the handman if the player gets the anwser wrong
                  if (!word.includes(letter)) {
                     showHangmanPart();
                    }
