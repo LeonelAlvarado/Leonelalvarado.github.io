@@ -31,6 +31,77 @@
             font-size: 24px;
             width: 300px;
         }
+      #hangman {
+    width: 100px;
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.gallows {
+    height: 20px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.head {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    display: none; /* Initially hidden */
+}
+
+.body {
+    width: 10px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    display: none; /* Initially hidden */
+}
+
+.leftArm, .rightArm {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 45px;
+    display: none; /* Initially hidden */
+}
+
+.leftArm {
+    left: 15px;
+    transform: rotate(45deg);
+}
+
+.rightArm {
+    right: 15px;
+    transform: rotate(-45deg);
+}
+
+.leftLeg, .rightLeg {
+    width: 5px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top: 90px;
+    display: none; /* Initially hidden */
+}
+
+.leftLeg {
+    left: 35px;
+}
+
+.rightLeg {
+    right: 35px;
+}
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
@@ -150,6 +221,25 @@
                     console.log("triedLetters is ", triedLetters);
                     console.log("word is ", word);
                   }
+                 if (!word.includes(letter)) {
+                    showHangmanPart();
+                   }
+
+                   function showHangmanPart() {
+                       if (tries === 9) {
+                           $(".head").show();
+                       } else if (tries === 8) {
+                           $(".body").show();
+                       } else if (tries === 7) {
+                           $(".leftArm").show();
+                      } else if (tries === 6) {
+                           $(".rightArm").show();
+                       } else if (tries === 5) {
+                           $(".leftLeg").show();
+                       } else if (tries === 4) {
+                           $(".rightLeg").show();
+                       }
+                   }
               });
 
              // 
@@ -209,5 +299,17 @@
     }
 
   </style>
+  
+<div id="hangman">
+    <div class="gallows"></div>
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="leftArm"></div>
+    <div class="rightArm"></div>
+    <div class="leftLeg"></div>
+    <div class="rightLeg"></div>
+</div>
 
+
+  
 </html>
