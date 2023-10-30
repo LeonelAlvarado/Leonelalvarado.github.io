@@ -22,6 +22,30 @@
               blank = "- - - - - - - - - ";
               $("#word").text(blank);
 
+              $(document).ready(function() {
+        
+
+                // test 
+        
+
+              $("#setWord").click(function() {
+              let userInputWord = $("#wordInput").val().trim().toLowerCase();
+        
+              if(userInputWord) {
+                word = " " + userInputWord.split("").join(" ") + " "; // Adding spaces to match your format
+                blank = "-".repeat(userInputWord.length).split("").join(" "); // Create blanks
+                $("#word").text(blank);
+            
+            // Hide the word input box to prevent changes once the game starts
+                $("#wordInputBox").hide();
+            } else {
+            alert("Please enter a valid word!");
+        }
+    });
+
+});
+           
+
               // this is the list of letters that have been tried
               triedLetters = "";
 
@@ -108,7 +132,12 @@
                     console.log("triedLetters is ", triedLetters);
                     console.log("word is ", word);
                   }
-                
+              });
+
+             // 
+           
+         });
+         
     </script>
   </head>
   <body>
@@ -145,4 +174,22 @@
      <span class="letter" id="z">z</span>  
      </div>
   </body>
+
+
+  <style>
+    /* Box*/
+
+    #wordInputBox {
+        margin: 20px;
+        font-size: 24px;
+    }
+
+    #wordInput {
+        padding: 10px;
+        font-size: 24px;
+        width: 300px;
+    }
+
+  </style>
+
 </html>
