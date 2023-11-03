@@ -50,18 +50,21 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     fillOpacity: 0.5,
     radius: 3600
 }).addTo(map);
+	  // these polygon reprecent areas that i have been in Mexico //
+	  // geolocation came from Google Maps. //
 	  var polygon = L.polygon([
-    [43.75, -121.503],
-    [43.60, -121.49],
-    [43.58, -121.40],
-    [43.664, -121.39],
+    [21.011687930002022, -102.18613086898766],
+    [21.011055151327692, -102.18049083223714],
+    [21.011336276208954, -102.19007533264035],
 ]).addTo(map);
 	  marker.bindPopup("<b>San Julian, Jalisco. Cuna de la guerra cristero </b><br>San Julian, Jalisco").openPopup();
 // take a look here add more code//
+	  circle.bindPopup("My Grandparents Home. Casa Alvarado.");
+	  
 	  
 	var popup = L.popup()
     .setLatLng([21.0095536, -102.1795590])
-    .setContent("I am a standalone popup.")
+    .setContent("San Julian, Jalisco. The Town i was in October 2023")
     .openOn(map);
 	  function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
