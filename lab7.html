@@ -31,21 +31,21 @@
   <script>
 	  // This part of the Code came from https://leafletjs.com/examples/quick-start/ //
 	  
-var map = L.map('map').setView([21.011687930002022, -102.18613086898766], 13);
+var map = L.map('map').setView([21.01109195313928, -102.18060763255691], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
 	  // Casa Alvarado//
-	  var marker = L.marker([21.011291068421485, -102.18601809350216]).addTo(map);
-	  var circle = L.circle([21.011661759295084, -102.1858983164586], {
+	  var marker = L.marker([21.01109195313928, -102.18060763255691]).addTo(map);
+	  var circle = L.circle([21.01109195313928, -102.18060763255691], {
     color: 'blue',
     fillColor: '#f03',
     fillOpacity: 0.5,
     radius: 150
 }).addTo(map);
-	  var circle2 = L.circle([21.0095536, -102.1795590], {
+	  var circle2 = L.circle([21.01109195313928, -102.18060763255691], {
     color: 'green',
     fillColor: '#f03',
     fillOpacity: 0.7,
@@ -54,9 +54,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	  // these polygon reprecent areas that i have been in Mexico //
 	  // geolocation came from Google Maps. //
 	  var polygon = L.polygon([
-    [21.011687930002022, -102.18613086898766],
-    [21.011055151327692, -102.18049083223714],
-    [21.011336276208954, -102.19007533264035],
+
 ]).addTo(map);
 	  marker.bindPopup("<b>San Julian a Town i visit during vacation </b><br>San Julian, Jalisco").openPopup();
 // take a look here add more code//
@@ -64,7 +62,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	  
 	  
 	var popup = L.popup()
-    .setLatLng([21.0095536, -102.1795590])
+    .setLatLng([21.01109195313928, -102.18060763255691])
     .setContent("San Julian, Jalisco. The Town i was in October 2023")
     .openOn(map);
 	  function onMapClick(e) {
