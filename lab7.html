@@ -31,24 +31,25 @@
   <script>
 	  // This part of the Code came from https://leafletjs.com/examples/quick-start/ //
 	  
-var map = L.map('map').setView([51.505, -0.09], 13);
+var map = L.map('map').setView([21.011687930002022, -102.18613086898766], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-	  var marker = L.marker([21.0095536, -102.1795590]).addTo(map);
-	  var circle = L.circle([21.011687930002022, -102.18613086898766], {
+	  // Casa Alvarado//
+	  var marker = L.marker([21.011291068421485, -102.18601809350216]).addTo(map);
+	  var circle = L.circle([21.011661759295084, -102.1858983164586], {
     color: 'blue',
     fillColor: '#f03',
     fillOpacity: 0.5,
-    radius: 200
+    radius: 150
 }).addTo(map);
 	  var circle2 = L.circle([21.0095536, -102.1795590], {
     color: 'green',
     fillColor: '#f03',
-    fillOpacity: 0.5,
-    radius: 3600
+    fillOpacity: 0.7,
+    radius: 2000
 }).addTo(map);
 	  // these polygon reprecent areas that i have been in Mexico //
 	  // geolocation came from Google Maps. //
@@ -57,7 +58,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     [21.011055151327692, -102.18049083223714],
     [21.011336276208954, -102.19007533264035],
 ]).addTo(map);
-	  marker.bindPopup("<b>San Julian, Jalisco. Cuna de la guerra cristero </b><br>San Julian, Jalisco").openPopup();
+	  marker.bindPopup("<b>San Julian a Town i visit during vacation </b><br>San Julian, Jalisco").openPopup();
 // take a look here add more code//
 	  circle.bindPopup("My Grandparents Home. Casa Alvarado.");
 	  
