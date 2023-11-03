@@ -39,12 +39,12 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 	  var marker = L.marker([43.6703995, -121.50363]).addTo(map);
 	  var circle = L.circle([43.670, -121.495], {
-    color: 'red',
+    color: 'blue',
     fillColor: '#f03',
     fillOpacity: 0.5,
-    radius: 600
+    radius: 200
 }).addTo(map);
-	  var circle2 = L.circle([43.727553, -121.230011], {
+	  var circle2 = L.circle([21.0095536, -102.1795590], {
     color: 'green',
     fillColor: '#f03',
     fillOpacity: 0.5,
@@ -56,13 +56,12 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     [43.58, -121.40],
     [43.664, -121.39],
 ]).addTo(map);
-	  marker.bindPopup("<b>La Pine Oregon... where everyday is Sunday!</b><br>La Pine, Oregon.").openPopup();
-	circle.bindPopup("My old neighborhood.");
-	circle2.bindPopup("Paulina Peak, a great place to fish and camp.");
-	polygon.bindPopup("A random polygon of La Pine, Oregon.");
-	  var popup = L.popup()
-    .setLatLng([43.5,-121.5])
-    .setContent("A spot I used to hang out.")
+	  marker.bindPopup("<b>San Julian, Jalisco. Cuna de la guerra cristero </b><br>San Julian, Jalisco").openPopup();
+// take a look here add more code//
+	  
+	var popup = L.popup()
+    .setLatLng([21.0095536, -102.1795590])
+    .setContent("I am a standalone popup.")
     .openOn(map);
 	  function onMapClick(e) {
     alert("You clicked the map at " + e.latlng);
