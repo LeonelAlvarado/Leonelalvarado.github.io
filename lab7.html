@@ -40,17 +40,17 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	  // Casa Alvarado//
 	  var marker = L.marker([21.01109195313928, -102.18060763255691]).addTo(map);
 	  //soccer field//
-	  var circle = L.circle([ 21.011710797097777, -102.18594594139158], { 
+	  var circle = L.circle([21.016250035931577, -102.19128670486366], {
     color: 'blue',
     fillColor: '#f03',
     fillOpacity: 0.4,
-    radius: 80
+    radius: 150
 }).addTo(map);
-	  var circle2 = L.circle([21.016250035931577, -102.19128670486366], {
+	  var circle2 = L.circle([21.011710797097777, -102.18594594139158], {
     color: 'green',
     fillColor: '#f03',
     fillOpacity: 0.3,
-    radius: 26
+    radius: 100
 }).addTo(map);
 	  // these polygon reprecent areas that i have been in Mexico //
 	  // geolocation came from Google Maps. //
@@ -60,8 +60,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	  marker.bindPopup("<b>San Julian a Town i visit during vacation </b><br>San Julian, Jalisco").openPopup();
 // take a look here add more code//
 	  circle.bindPopup("My Grandparents Home. Casa Alvarado.");
-	   circle2.bindPopup("Soccer Field all the Cousins and friends would play at."
-	
 	  
 	  
 	var popup = L.popup()
@@ -84,7 +82,7 @@ function onMapClick(e) {
 
 map.on('click', onMapClick);
 
-//By Leonel Alvarado
+
       </script>
 </body>
 </html>
