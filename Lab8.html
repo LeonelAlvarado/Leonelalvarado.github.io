@@ -49,7 +49,7 @@
 
 		// let's create our basemap! -- ##1 here
 
-		map = L.map('map').setView([0,0], 10);
+		map = L.map('map').setView([39.7392, -104.9903], 10);
 
 		// let's add three sets of background tiles - one from OSM,  one from HOT OSM, and one from openTopoMap
 		var OSMTiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -85,6 +85,8 @@
 			// add the map to the layer controls
 
 			layerControl.addOverlay(acsDenver2021Layer, "Census 2021" );
+			 }).fail(function() {
+            		console.log("Error loading GeoJSON");
 		});
 
 		// let's try to add some remote DRCOG data
